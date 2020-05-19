@@ -19,7 +19,9 @@ var mock =
   }
 };
 
-
+app.get("/",(req,res)=>{
+    res.sendfile(__dirname+'index.html');
+    })
 
 app.get("/roopz",(req,res)=>{
 res.send(mock);
