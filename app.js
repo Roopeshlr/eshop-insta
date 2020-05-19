@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 
 
-app.get("/roope",(req,res)=>{
+app.get("/",(req,res)=>{
 res.send("ghsdkhasd");
 })
 const port = process.env.port||3000;
