@@ -6,7 +6,7 @@ const app = express();
 app.get("/roope",(req,res)=>{
 res.send("ghsdkhasd");
 })
-
-app.listen(8000,()=>{
+const port = process.env.port||3000;
+app.listen(port,()=>{
 console.log("its working");
 })
